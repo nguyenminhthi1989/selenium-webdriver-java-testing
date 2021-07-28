@@ -14,9 +14,6 @@ public class Topic_01_CheckEnvironment {
 	WebDriver driver;
 	
 	// edit
-	// edit
-	// edit
-	// edit123456123
 
 	@BeforeClass
 	public void beforeClass() {
