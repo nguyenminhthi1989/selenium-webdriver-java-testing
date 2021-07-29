@@ -93,7 +93,7 @@ public class Video_07_Selenium_Locator {
 		Thread.sleep(3000);
 	}
 	
-	@Test
+	//@Test
 	public void TC_08_Find_Locator_By_Xpath() throws InterruptedException {
 		//ID with Xpath
 		System.out.println("8 - SendKey to Email textbox by: ID with Xpath");
