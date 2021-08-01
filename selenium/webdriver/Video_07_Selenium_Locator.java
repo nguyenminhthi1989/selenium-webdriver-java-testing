@@ -18,6 +18,8 @@ public class Video_07_Selenium_Locator {
 	public void beforeClass() {
 		//System.setProperty("webdriver.gecko.driver", ".\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
+		
+		//Wait for 30s before web elemnets are finished to render --> need to execute before running testcase
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://live.demoguru99.com/index.php/customer/account/login/");
@@ -93,18 +95,18 @@ public class Video_07_Selenium_Locator {
 		Thread.sleep(3000);
 	}
 	
-	//@Test
+	@Test
 	public void TC_08_Find_Locator_By_Xpath() throws InterruptedException {
 		//ID with Xpath
 		System.out.println("8 - SendKey to Email textbox by: ID with Xpath");
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("XpathID@gmail.com");
 		
 		//ClassName with Xpath
-		System.out.println("8 - SendKey to Email textbox by: ClassName with Xpath");
+		System.out.println("8 - SendKey to Password textbox by: ClassName with Xpath");
 		driver.findElement(By.xpath("//input[@class='input-text required-entry validate-password']")).sendKeys("123");
 		
 		//Name with Xpath
-		System.out.println("8 - SendKey to Email textbox by: Name with Xpath");
+		System.out.println("8 - Click on Login button by: Name with Xpath");
 		driver.findElement(By.xpath("//button[@name='send']")).click();
 		Assert.assertTrue(driver.findElement(By.id("advice-validate-password-pass")).isDisplayed());
 		Thread.sleep(3000);
