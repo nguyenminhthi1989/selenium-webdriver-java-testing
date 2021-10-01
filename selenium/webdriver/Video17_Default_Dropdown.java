@@ -28,7 +28,7 @@ public class Video17_Default_Dropdown {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("firefor.gecko.driver", ".\\browserDrivers\\geckodriver.exe");
+		System.setProperty("firefox.gecko.driver", ".\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		
 		firstName = "test";
