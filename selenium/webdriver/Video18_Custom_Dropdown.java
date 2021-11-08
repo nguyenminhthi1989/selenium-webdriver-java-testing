@@ -25,9 +25,15 @@ public class Video18_Custom_Dropdown {
 	public void beforeClass() {
 		System.setProperty("firefox.gecko.driver", ".\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
+		
+		// wait để apply cho các trạng thái của element (visible/invisible/presence/clickable/...)
 		explicitWait = new WebDriverWait(driver, 15);
+		
+		// ép kiểu tường minh (Reference casting)
 		jsExecutor = (JavascriptExecutor) driver;
 		
+		
+		// wait để tìm element (findElement/findElements)
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
