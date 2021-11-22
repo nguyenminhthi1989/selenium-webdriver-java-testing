@@ -240,8 +240,8 @@ public class Video19_Custom_Dropdown_II {
 					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", item);
 					System.out.println("Item " + item.getText() + " is clicked by javaScript!");
 					item.click();
-					break;
 				}
+				break;
 			}
 			else {
 				System.out.println("Item " + expectedItem + " is not in the list. Please choose another item!");
