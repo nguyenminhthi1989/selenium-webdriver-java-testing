@@ -67,9 +67,9 @@ public class Video23_Topic10_User_Interaction {
 		
 		// switch to new pop-up iframe if it appears
 		
-		//driver.switchTo().frame("preview-notification-frame");
+		driver.switchTo().frame("preview-notification-frame");
 		//jsExecutor.executeScript("arguments[0].click()", driver.findElement(By.xpath("//a[@id='NC_CLOSE_ICON']")));
-		//driver.findElement(By.xpath("//a[@id='NC_CLOSE_ICON']")).click();
+		driver.findElement(By.xpath("//a[@id='NC_CLOSE_ICON']")).click();
 		
 		sleepInSecond(2);
 		
