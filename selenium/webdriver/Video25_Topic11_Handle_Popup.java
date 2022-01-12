@@ -194,16 +194,6 @@ public class Video25_Topic11_Handle_Popup {
 			System.out.println("------------------------- The pop-up is NOT displaying! -------------------------");
 		}
 	}
-
-	public void draft() {
-		if(driver.findElement(By.className("popup-content")).isDisplayed()) {
-			System.out.println("------------------------- The pop-up is displaying! -------------------------");
-			sleepInSecond(1);
-			driver.findElement(By.id("close-popup")).click();
-			sleepInSecond(1);
-			System.out.println("------------------------- The pop-up is closed! -------------------------");
-		}	
-	}
 	
 	public void sleepInSecond(int sleep) {
 		try {
